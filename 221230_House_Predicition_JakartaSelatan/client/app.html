@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jakarta Selatan House Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+    <h1>Jakarta Selatan House Price Prediction</h1>
+	<h2>Luas Tanah</h2>
+    <input class="area"  type="text" id="uiLt" class="floatLabel" name="LuasTanah" value="1000">
+    <h2>Luas Bangunan</h2>
+    <input class="area"  type="text" id="uiLb" class="floatLabel" name="LuasBangunan" value="1000">
+	<h2>Jumlah Kamar Tidur</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-kt-1" name="uiKt" value="1"/>
+		<label for="radio-kt-1">1</label>
+		<input type="radio" id="radio-kt-2" name="uiKt" value="2" checked/>
+		<label for="radio-kt-2">2</label>
+		<input type="radio" id="radio-kt-3" name="uiKt" value="3"/>
+		<label for="radio-kt-3">3</label>
+		<input type="radio" id="radio-kt-4" name="uiKt" value="4"/>
+		<label for="radio-kt-4">4</label>
+		<input type="radio" id="radio-kt-5" name="uiKt" value="5"/>
+		<label for="radio-kt-5">5</label>
+        <input type="radio" id="radio-kt-6" name="uiKt" value="6"/>
+		<label for="radio-kt-6">6</label>
+        <input type="radio" id="radio-kt-7" name="uiKt" value="7"/>
+		<label for="radio-kt-7">7</label>
+        <input type="radio" id="radio-kt-8" name="uiKt" value="8"/>
+		<label for="radio-kt-8">8</label>
+        <input type="radio" id="radio-kt-9" name="uiKt" value="9"/>
+		<label for="radio-kt-9">9</label>
+        <input type="radio" id="radio-kt-10" name="uiKt" value="10"/>
+		<label for="radio-kt-10">10</label>
+	</div>
+	<h2>Jumlah Kamar Mandi</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-km-1" name="uiKm" value="1"/>
+		<label for="radio-km-1">1</label>
+		<input type="radio" id="radio-km-2" name="uiKm" value="2" checked/>
+		<label for="radio-km-2">2</label>
+		<input type="radio" id="radio-km-3" name="uiKm" value="3"/>
+		<label for="radio-km-3">3</label>
+		<input type="radio" id="radio-km-4" name="uiKm" value="4"/>
+		<label for="radio-km-4">4</label>
+		<input type="radio" id="radio-km-5" name="uiKm" value="5"/>
+		<label for="radio-km-5">5</label>
+        <input type="radio" id="radio-km-6" name="uiKm" value="6"/>
+		<label for="radio-km-6">6</label>
+        <input type="radio" id="radio-km-7" name="uiKm" value="7"/>
+		<label for="radio-km-7">7</label>
+        <input type="radio" id="radio-km-8" name="uiKm" value="8"/>
+		<label for="radio-km-8">8</label>
+        <input type="radio" id="radio-km-9" name="uiKm" value="9"/>
+		<label for="radio-km-9">9</label>
+        <input type="radio" id="radio-km-10" name="uiKm" value="10"/>
+		<label for="radio-km-10">10</label>
+	</div>
+		<h2>Garasi</h2>
+	<div>
+  <select class="garasi" name="" id="uiGarasi">
+    <option value="" disabled="disabled" selected="selected">Apakah Ada Garasi?</option>
+		<option>ADA</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Click to Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</form>
+</body>
+</html>
